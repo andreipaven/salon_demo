@@ -47,20 +47,20 @@ const DESKTOP = [
 // close to the text (small scale, modest |x|/|y|).
 const MOBILE = [
   // top-left (scissors) — small, close to the title
-  { C: Scissors, pos: [-1.05, 1.95, 0.2], scale: 0.26, off: [0, -0.4, 0], rot: [0.12, 0, 0.16],
+  { C: Scissors, pos: [-1.15, 1.95, 0.2], scale: 0.26, off: [0, -0.4, 0], rot: [0.12, 0, 0.16],
     p: { rotSpeed: [0.015, 0.09, 0], floatAmp: 0.08, floatSpeed: 0.5, orbitRadius: 0.05, orbitSpeed: 0.16, phase: 0 } },
   // top-right (clipper) — small, close to the title
-  { C: Clipper, pos: [1.12, 2.05, 0], scale: 0.32, off: [0, -0.3, 0], rot: [0.1, -0.35, -0.12],
+  { C: Clipper, pos: [1.2, 2.05, 0], scale: 0.32, off: [0, -0.3, 0], rot: [0.1, -0.35, -0.12],
     p: { rotSpeed: [0, 0.085, 0], floatAmp: 0.08, floatSpeed: 0.44, orbitRadius: 0.05, orbitSpeed: 0.14, phase: 1.1 } },
   /* The bottom pair sits in the band where the hero overlaps the top of About
      (the section is pulled up by -20vh). They must stay clear of the canvas'
      bottom edge, which crops anything that reaches it — at y -2.55 both were
      sliced flat in half. */
   // bottom-left
-  { C: Comb, pos: [-1.02, -1.75, -0.2], scale: 0.32, off: [0, 0.05, 0], rot: [0.14, 0.22, -0.2],
+  { C: Comb, pos: [-1.12, -1.88, -0.2], scale: 0.32, off: [0, 0.05, 0], rot: [0.14, 0.22, -0.2],
     p: { rotSpeed: [0.01, 0.07, 0.015], floatAmp: 0.1, floatSpeed: 0.47, orbitRadius: 0.06, orbitSpeed: 0.12, phase: 4.2 } },
   // bottom-right
-  { C: HairDryer, pos: [1.06, -1.8, -0.3], scale: 0.34, off: [0, 0.55, 0], rot: [0.08, 0.55, 0.04],
+  { C: HairDryer, pos: [1.16, -1.95, -0.3], scale: 0.34, off: [0, 0.55, 0], rot: [0.08, 0.55, 0.04],
     p: { rotSpeed: [0, 0.06, 0.012], floatAmp: 0.1, floatSpeed: 0.4, orbitRadius: 0.06, orbitSpeed: 0.13, phase: 2.5 } },
 ];
 
