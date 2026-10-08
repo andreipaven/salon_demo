@@ -77,5 +77,11 @@
     "hours": "Luni – Sâmbătă · 09:00 – 19:00",
     "rights": "Toate drepturile rezervate.",
     "demo": "Site demo."
+  },
+  "notFound": {
+    "label": "Eroare 404",
+    "heading": "Pagina asta a fost tunsă.",
+    "text": "Linkul pe care l-ai urmat nu mai există sau a fost scurtat prea mult. Te ducem înapoi la pagina principală.",
+    "cta": "Înapoi acasă"
   }
 }

@@ -556,6 +556,8 @@ body.hero-reveal .header { opacity: 1; transform: none; }
   * { animation-duration: 0.001s !important; }
   .hero-title .line > i { transform: none; }
   .hero-eyebrow, .hero-sub, .hero-cta, .scroll-cue, .header { opacity: 1 !important; transform: none !important; }
+  .nf-art .nf-scissors, .nf-art .nf-blade-a, .nf-art .nf-blade-b,
+  .nf-art .nf-comb, .nf-art .clip { animation: none !important; transform: none !important; opacity: 1 !important; }
   .hero-canvas { opacity: 1 !important; }
 }
 
@@ -585,4 +587,84 @@ body.hero-reveal .header { opacity: 1; transform: none; }
 }
 @media (max-width: 520px) {
   .footer-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------------- 404 ---------------- */
+.notfound { min-height: 100svh; display: flex; align-items: center; background: var(--off); padding: clamp(80px, 12vh, 140px) var(--gutter); }
+.nf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+
+.nf-brand { font-size: 1.35rem; margin-bottom: 2.4rem; }
+.nf-text .section-label { display: flex; }
+.nf-text h1 {
+  font-family: var(--font-display), sans-serif; font-weight: 700;
+  font-size: clamp(2.2rem, 5vw, 3.8rem); letter-spacing: -0.03em; line-height: 1;
+  margin: 1.1rem 0 1.1rem;
+}
+.nf-text p { color: var(--gray); max-width: 38ch; line-height: 1.7; }
+.nf-cta { margin-top: 2.2rem; }
+
+.nf-visual { display: flex; justify-content: center; }
+.nf-art { width: 100%; max-width: 460px; height: auto; }
+/* the illustration reads its colours from the same tokens as everything else */
+.nf-art .line { stroke: var(--ink); }
+.nf-art .soft { stroke: var(--gray-soft); }
+.nf-art .accent { stroke: var(--blue); }
+.nf-art .accent-fill { fill: var(--blue); }
+.nf-art .cape { fill: var(--white); }
+.nf-art .shade { fill: var(--off-2); }
+.nf-art .hair { fill: var(--ink); }
+.nf-art .clip { stroke: var(--gray); }
+.nf-art .ink-fill { fill: var(--ink); }
+
+/* The illustration animates in plain CSS, so the page stays a Server Component
+   with no JavaScript. SVG elements need an explicit transform-origin: their
+   default (50% 50% of the view-box) would offset every rotation. */
+.nf-art .nf-scissors,
+.nf-art .nf-blade-a,
+.nf-art .nf-blade-b,
+.nf-art .nf-comb { transform-origin: 0 0; }
+/* a clipping rotates around itself, so it gets its own box instead */
+.nf-art .clip { transform-box: fill-box; transform-origin: 50% 50%; }
+
+/* scissors: the whole tool drifts while the two halves snip. Each half rotates
+   about the pivot at (5,0) via the translate-rotate-translate idiom. */
+@keyframes nf-bob {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-3px, 2px); }
+}
+@keyframes nf-snip-a {
+  0%, 55%, 100% { transform: translate(5px, 0) rotate(0deg) translate(-5px, 0); }
+  75% { transform: translate(5px, 0) rotate(-11deg) translate(-5px, 0); }
+}
+@keyframes nf-snip-b {
+  0%, 55%, 100% { transform: translate(5px, 0) rotate(0deg) translate(-5px, 0); }
+  75% { transform: translate(5px, 0) rotate(11deg) translate(-5px, 0); }
+}
+.nf-art .nf-scissors { animation: nf-bob 3.2s var(--ease) infinite; }
+.nf-art .nf-blade-a { animation: nf-snip-a 2.8s var(--ease) infinite; }
+.nf-art .nf-blade-b { animation: nf-snip-b 2.8s var(--ease) infinite; }
+
+/* comb: drawn through the hair and back */
+@keyframes nf-comb-move {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(8px, 0) rotate(3deg); }
+}
+.nf-art .nf-comb { animation: nf-comb-move 3.6s var(--ease) infinite; }
+
+/* clippings: released near the blades, tumbling down and fading */
+@keyframes nf-fall {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+  12% { opacity: 1; }
+  65% { opacity: 1; }
+  100% { transform: translate(13px, 64px) rotate(58deg); opacity: 0; }
+}
+.nf-art .clip { animation: nf-fall 2.8s linear infinite; animation-delay: var(--d, 0s); }
+
+@media (max-width: 860px) {
+  .nf-grid { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; justify-items: center; }
+  .nf-text .section-label { justify-content: center; }
+  .nf-text .section-label::before { display: none; }
+  .nf-text p { max-width: 34ch; }
+  .nf-visual { order: -1; }
+  .nf-art { max-width: 320px; }
 }

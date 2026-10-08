@@ -77,5 +77,11 @@
     "hours": "Monday – Saturday · 09:00 – 19:00",
     "rights": "All rights reserved.",
     "demo": "Demo website."
+  },
+  "notFound": {
+    "label": "Error 404",
+    "heading": "This page got cut.",
+    "text": "The link you followed no longer exists, or it was trimmed a little too short. Let's take you back to the home page.",
+    "cta": "Back home"
   }
 }
