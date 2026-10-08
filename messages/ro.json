@@ -1,0 +1,81 @@
+{
+  "nav": { "home": "Acasă", "about": "Despre", "services": "Servicii", "contact": "Contact" },
+  "common": { "book": "Programează-te" },
+  "header": { "openMenu": "Deschide meniul", "closeMenu": "Închide meniul", "language": "Limbă" },
+  "loading": { "tagline": "Pregătim experiența ta" },
+  "hero": {
+    "eyebrow": "Studio de Hairstyling",
+    "title1": "PRECIZIE.",
+    "title2": "STIL.",
+    "title3": "EXPERIENȚĂ.",
+    "sub": "Hairstyling profesional. Atenție la detalii. Stil personalizat.",
+    "scroll": "Derulează pentru a explora"
+  },
+  "about": {
+    "label": "Despre noi",
+    "headingLine1": "Mai mult decât un haircut.",
+    "headingLine2": "Este despre ",
+    "headingAccent": "stilul tău.",
+    "p1": "La NORD, fiecare tunsoare începe cu atenție la detalii și o tehnică precisă. Lucrăm cu instrumente și produse profesionale, pentru un rezultat gândit special pentru tine.",
+    "p2": "Hairstyliștii noștri sunt profesioniști certificați, cu experiență în competiții de hairstyling și perfecționare continuă.",
+    "p3": "Un spațiu modern și confortabil, unde stilul tău primește timpul și precizia pe care le merită."
+  },
+  "services": {
+    "label": "Servicii",
+    "heading": "Fiecare detaliu contează.",
+    "sub": "De la prima linie până la ultimul finisaj, fiecare serviciu este construit în jurul preciziei, tehnicii și stilului personal.",
+    "price": "[PREȚ]",
+    "items": [
+      { "title": "PRECISION CUT", "name": "Tuns", "dur": "~45 MIN", "desc": "Un tuns construit în jurul formei, proporțiilor și stilului tău. Fiecare detaliu este ajustat cu precizie pentru un rezultat clean și ușor de purtat." },
+      { "title": "CLIPPER CUT", "name": "Tuns cu mașina", "dur": "~30–40 MIN", "desc": "Linii precise, tranziții curate și un finish impecabil. Pentru un look sharp, modern și bine definit." },
+      { "title": "STYLE & FINISH", "name": "Styling", "dur": "~20–30 MIN", "desc": "De la pregătirea părului până la forma finală. Produse profesionale și tehnici adaptate tipului de păr și look-ului dorit." },
+      { "title": "PRECISION DETAIL", "name": "Detailing", "dur": "~15–20 MIN", "desc": "Finisajele care fac diferența. Contururi, detalii și ajustări precise pentru un rezultat perfect definit." }
+    ]
+  },
+  "testimonials": {
+    "label": "Testimoniale",
+    "heading": "Ce spun clienții.",
+    "sub": "Stilul se vede. Experiența se simte.",
+    "role": "Client",
+    "prev": "Testimonialul anterior",
+    "next": "Testimonialul următor",
+    "goTo": "Testimonialul {n}",
+    "items": [
+      { "quote": "Foarte atent la detalii și, mai ales, a înțeles exact ce îmi doream. Rezultatul a ieșit impecabil.", "name": "Andrei M." },
+      { "quote": "Atmosferă foarte bună, oameni profesioniști și un rezultat care chiar se vede. Cu siguranță revin.", "name": "Vlad A." },
+      { "quote": "Unul dintre puținele locuri unde simți că fiecare detaliu contează. Tunsul a ieșit exact cum mi-am dorit.", "name": "Robert C." },
+      { "quote": "Profesionalism de la început până la final. Foarte bună atenția la detalii și produse de calitate.", "name": "Matei D." }
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "heading": "Hai să vorbim.",
+    "text": "Programează-te telefonic sau scrie-ne un mesaj. Îți răspundem cât mai repede cu putință.",
+    "phoneLabel": "Sună direct",
+    "socialLabel": "Urmărește-ne",
+    "nume": "Nume",
+    "prenume": "Prenume",
+    "email": "Email",
+    "mesaj": "Mesaj",
+    "submit": "Trimite mesajul",
+    "sending": "Se trimite…",
+    "sent": "Trimis ✓",
+    "note": "Acesta este un site demo — mesajul nu este trimis nicăieri.",
+    "toast": "Formular procesat cu succes. Acesta este un site demo, iar mesajul nu a fost trimis nicăieri.",
+    "closeToast": "Închide notificarea",
+    "errNume": "Introdu numele.",
+    "errPrenume": "Introdu prenumele.",
+    "errEmailRequired": "Introdu adresa de email.",
+    "errEmailInvalid": "Introdu un email valid.",
+    "errMesajMin": "Mesajul trebuie să aibă cel puțin 10 caractere.",
+    "errMesajMax": "Mesajul este prea lung (maximum 1000 de caractere)."
+  },
+  "footer": {
+    "tagline": "Studio modern de hairstyling pentru bărbați. Precizie, tehnică și un stil gândit pentru tine.",
+    "navTitle": "Navigare",
+    "contactTitle": "Contact",
+    "hours": "Luni – Sâmbătă · 09:00 – 19:00",
+    "rights": "Toate drepturile rezervate.",
+    "demo": "Site demo."
+  }
+}

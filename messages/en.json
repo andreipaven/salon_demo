@@ -1,0 +1,81 @@
+{
+  "nav": { "home": "Home", "about": "About", "services": "Services", "contact": "Contact" },
+  "common": { "book": "Book now" },
+  "header": { "openMenu": "Open menu", "closeMenu": "Close menu", "language": "Language" },
+  "loading": { "tagline": "Crafting your experience" },
+  "hero": {
+    "eyebrow": "Hairstyling Studio",
+    "title1": "PRECISION.",
+    "title2": "STYLE.",
+    "title3": "EXPERIENCE.",
+    "sub": "Professional hairstyling. Attention to detail. Personalized style.",
+    "scroll": "Scroll to explore"
+  },
+  "about": {
+    "label": "About us",
+    "headingLine1": "More than a haircut.",
+    "headingLine2": "It's about ",
+    "headingAccent": "your style.",
+    "p1": "At NORD, every haircut starts with attention to detail and precise technique. We work with professional tools and products, for a result tailored to you.",
+    "p2": "Our hairstylists are certified professionals, with experience in hairstyling competitions and continuous training.",
+    "p3": "A modern, comfortable space where your style gets the time and precision it deserves."
+  },
+  "services": {
+    "label": "Services",
+    "heading": "Every detail counts.",
+    "sub": "From the first line to the final finish, every service is built around precision, technique and personal style.",
+    "price": "[PRICE]",
+    "items": [
+      { "title": "PRECISION CUT", "name": "Haircut", "dur": "~45 MIN", "desc": "A cut built around your shape, proportions and style. Every detail is adjusted with precision for a clean, easy-to-wear result." },
+      { "title": "CLIPPER CUT", "name": "Clipper cut", "dur": "~30–40 MIN", "desc": "Precise lines, clean transitions and a flawless finish. For a sharp, modern and well-defined look." },
+      { "title": "STYLE & FINISH", "name": "Styling", "dur": "~20–30 MIN", "desc": "From prepping the hair to the final shape. Professional products and techniques adapted to your hair type and desired look." },
+      { "title": "PRECISION DETAIL", "name": "Detailing", "dur": "~15–20 MIN", "desc": "The finishing touches that make the difference. Outlines, details and precise adjustments for a perfectly defined result." }
+    ]
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "heading": "What they say.",
+    "sub": "Style shows. Experience is felt.",
+    "role": "Client",
+    "prev": "Previous testimonial",
+    "next": "Next testimonial",
+    "goTo": "Testimonial {n}",
+    "items": [
+      { "quote": "Very attentive to detail and, above all, understood exactly what I wanted. The result turned out flawless.", "name": "Andrei M." },
+      { "quote": "Great atmosphere, professional people and a result you can really see. I'll definitely be back.", "name": "Vlad A." },
+      { "quote": "One of the few places where you feel that every detail matters. The cut came out exactly as I wanted.", "name": "Robert C." },
+      { "quote": "Professionalism from start to finish. Great attention to detail and quality products.", "name": "Matei D." }
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "heading": "Let's talk.",
+    "text": "Book by phone or send us a message. We'll get back to you as soon as possible.",
+    "phoneLabel": "Call directly",
+    "socialLabel": "Follow us",
+    "nume": "First name",
+    "prenume": "Last name",
+    "email": "Email",
+    "mesaj": "Message",
+    "submit": "Send message",
+    "sending": "Sending…",
+    "sent": "Sent ✓",
+    "note": "This is a demo site — the message isn't sent anywhere.",
+    "toast": "Form processed successfully. This is a demo site, and the message was not sent anywhere.",
+    "closeToast": "Close notification",
+    "errNume": "Enter your first name.",
+    "errPrenume": "Enter your last name.",
+    "errEmailRequired": "Enter your email address.",
+    "errEmailInvalid": "Enter a valid email.",
+    "errMesajMin": "The message must be at least 10 characters.",
+    "errMesajMax": "The message is too long (maximum 1000 characters)."
+  },
+  "footer": {
+    "tagline": "A modern hairstyling studio for men. Precision, technique and a style made for you.",
+    "navTitle": "Navigation",
+    "contactTitle": "Contact",
+    "hours": "Monday – Saturday · 09:00 – 19:00",
+    "rights": "All rights reserved.",
+    "demo": "Demo website."
+  }
+}
